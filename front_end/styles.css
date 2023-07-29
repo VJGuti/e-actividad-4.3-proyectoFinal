@@ -57,7 +57,7 @@ nav{
     grid-template-columns: repeat(7, 1fr);
     border-radius: 2rem;
 }
-.agregar{
+.agregar , .eliminar, .imgPocion{
     width: 1.5em;
     align-items: center;
     margin: auto;
