@@ -11,7 +11,7 @@
         <h3></h3>
         <h3></h3>
         <img src="" alt="icono de github">
-    </header>   
+    </header>
     <section>
         <h2 >Lista de pociones</h2>
         <input type="text" class="buscador">
@@ -21,58 +21,74 @@
                 <a href="">Pociones base</a>
                 <a href="">Pociones con efectos positivos</a>
                 <a href="">Pociones con efectos negativos</a>
-                
+
             </nav>
             <div class="pociones">
                 <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Nombre</p>
-                    <p>Descripcion</p>
+                    <p>Descripción</p>
                     <p>Precio</p>
                     <p>Cantidad</p>
                     <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                   
+
                 </div>
                 <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Nombre</p>
-                    <p>Descripcion</p>
+                    <p>Descripción</p>
                     <p>Precio</p>
                     <p>Cantidad</p>
                     <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                   
+
                 </div>  <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Nombre</p>
-                    <p>Descripcion</p>
+                    <p>Descripción</p>
                     <p>Precio</p>
                     <p>Cantidad</p>
                     <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                   
+
                 </div>  <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Nombre</p>
-                    <p>Descripcion</p>
+                    <p>Descripción</p>
                     <p>Precio</p>
                     <p>Cantidad</p>
                     <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                   
+
                 </div>
-         
             </div>
+            <button id="btn-abrir-modal">Agregar Poción</button>
+            <dialog id="modal">
+                <h3>Prepara tu poción</h3>
+                <form method="dialog" id="form-agregar">
+                    <img id="fotoPrevisualizacion">
+                    <input type="file" id="foto" accept="image/*">
+                    <label>Nombre<input type="text" name="Nombre" id="nombre"></label>
+                    <label>Categoría<input type="text" name="Categoría" id="categoria"></label><br>
+                    <label>Precio<input type="number" name="Precio" id="precio"></label>
+                    <label>Cantidad<input type="number" name="Cantidad" id="cantidad"></label><br>
+                    <label>Descripción<input type="text" name="Descripción" id="descripcion"></label><br>
+                    <label>Clasificación<input type="text" name="Clasificación" id="clasificacion"></label><br>
+                    <input type="submit" value="Guadar">
+                    <button id="btn-cerrar-modal">Cerrar</button>
+                </form>
+            </dialog>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>

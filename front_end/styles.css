@@ -20,7 +20,6 @@ header{
     margin: auto;
     border-radius: 2rem;
     width: 60%;
-    
 }
 h2{
     color: #581C87;
@@ -31,9 +30,7 @@ h2{
     display: grid;
     grid-template-columns: 20% 80%;
     padding: 5% 0;
-   
 }
-
 
 /*Nav de clasificación de las pociones*/
 
@@ -61,4 +58,12 @@ nav{
     width: 1.5em;
     align-items: center;
     margin: auto;
+}
+
+#modal {
+    max-width: 70ch;
+}
+
+#modal::backdrop {
+    background-color: #00000059;
 }
