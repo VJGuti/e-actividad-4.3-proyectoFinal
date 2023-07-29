@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #D8B4FE;
 }
 
@@ -11,6 +11,10 @@ header{
     width: 100%;
     height: 3em;
     background: #701A75 ;
+}
+.titulo{
+    color: aliceblue;
+    letter-spacing: 0.2em;
 }
 
 /*Buscador de pociones*/
@@ -37,8 +41,17 @@ h2{
 nav{
     background: #4A044E;
     margin: 0 10%;
-    padding: 1em;
+    padding: 2em;
 }
+nav h3{
+    color: #fff;
+}
+nav a{
+    margin: 1em;
+    text-decoration: none;
+    color: rgb(244, 230, 253);
+}
+ 
 
 /*producto*/
 
@@ -53,6 +66,14 @@ nav{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     border-radius: 2rem;
+
+}
+.producto p{
+    text-align: center;
+}
+.pociones a{
+    justify-self: center;
+    
 }
 .agregar , .eliminar, .imgPocion{
     width: 1.5em;
