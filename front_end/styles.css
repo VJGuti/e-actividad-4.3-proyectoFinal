@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #D8B4FE;
+}
+
+/*Header de la página */
+
+header{
+    width: 100%;
+    height: 3em;
+    background: #701A75 ;
+}
+
+/*Buscador de pociones*/
+.buscador{
+    background: #581C87;
+    display: flex;
+    margin: auto;
+    border-radius: 2rem;
+    width: 60%;
+    
+}
+h2{
+    color: #581C87;
+    text-align: center;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 5% 0;
+   
+}
+
+
+/*Nav de clasificación de las pociones*/
+
+nav{
+    background: #4A044E;
+    margin: 0 10%;
+    padding: 1em;
+}
+
+/*producto*/
+
+.pociones{
+    display: grid;
+    margin: 0 10%;
+    padding: 1em;
+}
+.producto{
+    background: #A179C3;
+    color:#3B0764 ;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-radius: 2rem;
+}
+.agregar{
+    width: 1.5em;
+    align-items: center;
+    margin: auto;
+}
