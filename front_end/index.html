@@ -44,6 +44,7 @@
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
+                    <button class="modal-modificar" id="btn-abrir-modal2">Modificar</button>
 
                 </div>  <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
@@ -69,8 +70,8 @@
 
                 </div>
             </div>
-            <button id="btn-abrir-modal">Agregar Poción</button>
-            <dialog id="modal">
+            <button id="btn-abrir-modal1">Agregar Poción</button>
+            <dialog id="modal1">
                 <h3>Prepara tu poción</h3>
                 <form method="dialog" id="form-agregar">
                     <img id="fotoPrevisualizacion">
@@ -82,7 +83,22 @@
                     <label>Descripción<input type="text" name="Descripción" id="descripcion"></label><br>
                     <label>Clasificación<input type="text" name="Clasificación" id="clasificacion"></label><br>
                     <input type="submit" value="Guadar">
-                    <button id="btn-cerrar-modal">Cerrar</button>
+                    <button id="btn-cerrar-modal1">Cerrar</button>
+                </form>
+            </dialog>
+            <dialog id="modal2">
+                <h3>Prepara tu poción</h3>
+                <form method="dialog" id="form-actualizar">
+                    <img id="fotoPrevisualizacion">
+                    <input type="file" id="foto" accept="image/*">
+                    <label>Nombre<input type="text" name="Nombre" id="nombre-act"></label>
+                    <label>Categoría<input type="text" name="Categoría" id="categoria-act"></label><br>
+                    <label>Precio<input type="number" name="Precio" id="precio-act"></label>
+                    <label>Cantidad<input type="number" name="Cantidad" id="cantidad-act"></label><br>
+                    <label>Descripción<input type="text" name="Descripción" id="descripcion-act"></label><br>
+                    <label>Clasificación<input type="text" name="Clasificación" id="clasificacion-act"></label><br>
+                    <input type="submit" value="Guadar">
+                    <button id="btn-cerrar-modal2">Cerrar</button>
                 </form>
             </dialog>
         </div>
