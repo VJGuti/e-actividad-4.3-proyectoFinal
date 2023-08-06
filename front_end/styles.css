@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Lunasima', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
 body{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background: #D8B4FE;
 }
 
@@ -9,22 +16,40 @@ body{
 
 header{
     width: 100%;
-    height: 3em;
-    background: #701A75 ;
+    height: 4.5em;
+    background: #701A75;
+    display: flex;
+    align-items: center;
 }
+
 .titulo{
+    padding-left: 1rem;
     color: aliceblue;
     letter-spacing: 0.2em;
 }
 
 /*Buscador de pociones*/
 .buscador{
-    background: #581C87;
+    color: #fff;
+    transition-property: all;
+    transition: ease-in-out;
+    transition-duration: 800ms;
+    background: #A179C3;
+    max-width: 35%;
+    height: 2rem;
     display: flex;
     margin: auto;
+    border-color: transparent;
     border-radius: 2rem;
     width: 60%;
 }
+
+.buscador:hover{
+    transition: ease-in-out;
+    transition-duration: 800ms;
+    background-color: #8a378f;
+}
+
 h2{
     color: #581C87;
     text-align: center;
@@ -74,16 +99,35 @@ nav a{
 .pociones a{
     justify-self: center;
 }
-.agregar , .eliminar, .imgPocion{
+.agregar, .eliminar, .imgPocion{
     width: 1.5em;
     align-items: center;
     margin: auto;
 }
 
-#modal {
+/* Formularios */
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     max-width: 70ch;
+    border-color: transparent;
+    border-radius: 20px;
 }
 
-#modal::backdrop {
-    background-color: #00000059;
+.modal::backdrop {
+    background-color: #00000070;
+}
+
+.form label input {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.fotoPrev {
+    width: 150px;
+    height: 150px;
 }
