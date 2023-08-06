@@ -16,17 +16,10 @@ body{
 
 header{
     width: 100%;
-<<<<<<< HEAD
-    height: 3em;
-    background: #701A75 ;
-    margin-top: 0;
-    padding-top: 1.5rem;
-=======
     height: 4.5em;
     background: #701A75;
     display: flex;
     align-items: center;
->>>>>>> 47cfdfe40d01d7809b7bcb5442b04db4e56477cb
 }
 
 .titulo{
@@ -52,11 +45,6 @@ header{
     border-color: transparent;
     border-radius: 2rem;
     width: 60%;
-<<<<<<< HEAD
-    padding: 0.8rem;
-    font-size: 1rem;
-=======
->>>>>>> 47cfdfe40d01d7809b7bcb5442b04db4e56477cb
 }
 
 .buscador:hover{
@@ -120,9 +108,7 @@ nav a{
 .agregar, .eliminar, .imgPocion{
     width: 1.5em;
     align-items: center;
-<<<<<<< HEAD
     margin-top: 0.8rem;
-=======
     margin: auto;
 }
 
@@ -151,5 +137,4 @@ nav a{
 .fotoPrev {
     width: 150px;
     height: 150px;
->>>>>>> 47cfdfe40d01d7809b7bcb5442b04db4e56477cb
 }
