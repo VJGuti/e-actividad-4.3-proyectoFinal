@@ -116,10 +116,9 @@ nav a{
 
 .modal {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    top: 10em;
+    background: #C084FC;
+    left:30%;
     max-width: 70ch;
     border-color: transparent;
     border-radius: 20px;
