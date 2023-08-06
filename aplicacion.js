@@ -7,6 +7,8 @@ const Respuestas = require('./back-End/baseDeDatos/Models/respuestas');
 const Preguntas = require('./back-End/baseDeDatos/Models/preguntas');
 const Encuestas = require('./back-End/baseDeDatos/Models/encuestas');
 
+const Pociones = require('./back-End/baseDeDatos/Models/pociones');
+
 app.listen(3000, () => {
   console.log('Servidor iniciado en el puerto 3000');
 });

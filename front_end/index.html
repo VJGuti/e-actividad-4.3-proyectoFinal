@@ -9,7 +9,7 @@
 <body>
     <header>
         <h3 class="titulo">Accio Posions</h3>
-           </header>   
+    </header>
     <section>
         <h2 >Lista de pociones</h2>
         <input type="text" class="buscador" placeholder="Nombre de la pocion">
@@ -19,20 +19,21 @@
                 <a href="">Pociones base</a>
                 <a href="">Pociones con efectos positivos</a>
                 <a href="">Pociones con efectos negativos</a>
-                
+
             </nav>
             <div class="pociones">
                 <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Nombre</p>
-                    <p>Descripcion</p>
+                    <p>Descripción</p>
                     <p>Precio</p>
                     <p>Cantidad</p>
                     <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                   
+                    <button class="modal-modificar" id="btn-abrir-modal2">Modificar</button>
+
                 </div>
                 <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
@@ -44,7 +45,7 @@
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                   
+
                 </div>  <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Poción de invisibilidad</p>
@@ -55,7 +56,7 @@
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                   
+
                 </div>  <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Poción de regeneración</p>
@@ -66,11 +67,44 @@
                         class="agregar">
                     </a>
                     <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                   
+
                 </div>
-         
             </div>
+            <button id="btn-abrir-modal1">Agregar Poción</button>
         </div>
     </section>
+    <section class="modals">
+        <dialog class="modal" id="modal1">
+            <h3>Prepara tu poción</h3>
+            <form class="form" method="dialog" id="form-agregar">
+                <img class="fotoPrev" id="fotoPrevisualizacion">
+                <input type="file" id="foto" accept="image/*"><br>
+                <label>Nombre<br><input type="text" name="Nombre" id="nombre"></label><br>
+                <label>Categoría<br><input type="text" name="Categoría" id="categoria"></label><br>
+                <label>Precio<br><input type="number" name="Precio" id="precio"></label><br>
+                <label>Cantidad<br><input type="number" name="Cantidad" id="cantidad"></label><br>
+                <label>Descripción<br><input type="text" name="Descripción" id="descripcion"></label><br>
+                <label>Clasificación<br><input type="text" name="Clasificación" id="clasificacion"></label><br>
+                <input type="submit" value="Guadar">
+                <button id="btn-cerrar-modal1">Cerrar</button>
+            </form>
+        </dialog>
+        <dialog class="modal" id="modal2">
+            <h3>Prepara tu poción</h3>
+            <form method="dialog" id="form-actualizar">
+                <img class="fotoPrev" id="fotoPrevisualizacion">
+                <input type="file" id="foto" accept="image/*">
+                <label>Nombre<input type="text" name="Nombre" id="nombre-act"></label>
+                <label>Categoría<input type="text" name="Categoría" id="categoria-act"></label><br>
+                <label>Precio<input type="number" name="Precio" id="precio-act"></label>
+                <label>Cantidad<input type="number" name="Cantidad" id="cantidad-act"></label><br>
+                <label>Descripción<input type="text" name="Descripción" id="descripcion-act"></label><br>
+                <label>Clasificación<input type="text" name="Clasificación" id="clasificacion-act"></label><br>
+                <input type="submit" value="Guadar">
+                <button id="btn-cerrar-modal2">Cerrar</button>
+            </form>
+        </dialog>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
