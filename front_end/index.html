@@ -28,11 +28,8 @@
                     <p>Descripción</p>
                     <p>Precio</p>
                     <p>Cantidad</p>
-                    <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
-                        class="agregar">
-                    </a>
-                    <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-                    <button class="modal-modificar" id="btn-abrir-modal2">Modificar</button>
+                    <button  id="btn-abrir-modal1"><img src="img/agregar.png" alt="icono para agregar pocion" class="editar_crear"></button>
+                    <button  class="modal-modificar" id="btn-abrir-modal2"><img src="img/editar (1).png" alt="icono para eliminar posicion" class="editar_crear"></button>
 
                 </div>
                 <div class="producto">
@@ -41,36 +38,31 @@
                     <p>Permite al jugador saltar más alto </p>
                     <p>30</p>
                     <p>10</p>
-                    <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
-                        class="agregar">
-                    </a>
-                    <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-
-                </div>  <div class="producto">
+                    <button  id="btn-abrir-modal1"><img src="img/agregar.png" alt="icono para agregar pocion" class="editar_crear"></button>
+                    <button  class="modal-modificar" id="btn-abrir-modal2"><img src="img/editar (1).png" alt="icono para eliminar posicion" class="editar_crear"></button>
+                </div>  
+                <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Poción de invisibilidad</p>
                     <p>Hace invisible el modelo del jugador.</p>
                     <p>20</p>
                     <p>50</p>
-                    <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
-                        class="agregar">
-                    </a>
-                    <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
-
-                </div>  <div class="producto">
+                    <button  id="btn-abrir-modal1"><img src="img/agregar.png" alt="icono para agregar pocion" class="editar_crear"></button>
+                    <button  class="modal-modificar" id="btn-abrir-modal2"><img src="img/editar (1).png" alt="icono para eliminar posicion" class="editar_crear"></button>
+                </div>  
+                <div class="producto">
                     <a href=""><img src="img/pocion.png" alt="imagen del producto" class="imgPocion"></a>
                     <p>Poción de regeneración</p>
                     <p>Restaura la vida a lo largo del tiempo</p>
                     <p>40</p>
                     <p>35</p>
-                    <a href=""><img src="img/agregar.png" alt="icono para agregar pocion"
-                        class="agregar">
-                    </a>
-                    <a href=""><img src="img/eliminar.png" alt="icono para eliminar posicion" class="eliminar"></a>
+                    <button  id="btn-abrir-modal1"><img src="img/agregar.png" alt="icono para agregar pocion" class="editar_crear"></button>
+                    <button  class="modal-modificar" id="btn-abrir-modal2"><img src="img/editar (1).png" alt="icono para eliminar posicion" class="editar_crear"></button>
+                    
 
                 </div>
             </div>
-            <button id="btn-abrir-modal1">Agregar Poción</button>
+            
         </div>
     </section>
     <section class="modals">
@@ -85,10 +77,8 @@
                 <label class="campo4">Cantidad<br><input type="number" name="Cantidad" id="cantidad"></label><br>
                 <label class="campo5">Descripción<br><input type="text" name="Descripción" id="descripcion"></label><br>
                 <label class="campo6">Clasificación<br><input type="text" name="Clasificación" id="clasificacion"></label><br>
-                <div class="botones">
-                    <input type="submit" value="Guadar" class="boton2">
-                    <button id="btn-cerrar-modal1" class="boton3">Cerrar</button>
-                </div>
+                <input type="submit" value="Guadar" class="boton2">
+                <button id="btn-cerrar-modal1" class="boton3">Cerrar</button>
             </form>
         </dialog>
         <dialog class="modal" id="modal2">
@@ -102,9 +92,9 @@
                 <label class="campo4">Cantidad<input type="number" name="Cantidad" id="cantidad-act"></label><br>
                 <label class="campo5">Descripción<input type="text" name="Descripción" id="descripcion-act"></label><br>
                 <label class="campo6">Clasificación<input type="text" name="Clasificación" id="clasificacion-act"></label><br>
-                <input type="submit" value="Guadar" class="boton2">
+               |<input type="submit" value="Guadar" class="boton2">
                 <button id="btn-cerrar-modal2" class="boton3">Cerrar</button>
-            </form>
+           </form>
         </dialog>
     </section>
     <script src="main.js"></script>
