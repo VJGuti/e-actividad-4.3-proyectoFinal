@@ -122,16 +122,56 @@ nav a{
     max-width: 70ch;
     border-color: transparent;
     border-radius: 20px;
+    width: 100%; 
+}
+
+.modal h3{
+    margin: 1rem;
+    margin-left: 30%;
+    display: flex;
+    text-align: center;
+    
 }
 
 .modal::backdrop {
     background-color: #00000070;
 }
+.form{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: repeat(6, 1fr);
+}
+.campo1, .campo3, .campo5, .campo6{
+    grid-column: 2;
+}
 
 .form label input {
     margin-top: .5rem;
     margin-bottom: 1rem;
+    border-radius:2rem ;
+    border-color: #fff;
 }
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+.boton1, .boton2, .boton3{
+    background: #701A75;
+    border-radius: 2rem;
+    border-color: #701A75;
+    color: #fff;
+}
+.boton1{
+    grid-column: 1;
+}
+.boton2{
+    grid-row: 6;
+}
+.boton3{
+    grid-column: 3/3;
+    grid-row: 6;
+}
+
 
 .fotoPrev {
     width: 150px;
