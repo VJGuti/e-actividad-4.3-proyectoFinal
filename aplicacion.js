@@ -9,28 +9,6 @@ const Encuestas = require('./back-End/baseDeDatos/Models/encuestas');
 
 const Pociones = require('./back-End/baseDeDatos/Models/pociones');
 
-app.listen(3000, () => {
-  console.log('Servidor iniciado en el puerto 3000');
-});
-
-app.get('/login', (req, res) => {
-  const username = req.query.username;
-  const password = req.query.password;
-
-  connection.query(
-    'SELECT * FROM usuarios WHERE nombre_usuario = ? AND contraseña = ?',
-    [username, password],
-    (error, results) => {
-      if (error) {
-        res.send('Error al consultar la base de datos');
-      } else if (results.length > 0) {
-        res.send('Inicio de sesión exitoso');
-      } else {
-        res.send('Nombre de usuario o contraseña incorrectos. ¿Desea registrarse?');
-      }
-    }
-  );
-});
 
 app.get('/inicio', (req, res) => {
   res.send('Bienvenido a la página de inicio');
@@ -38,7 +16,7 @@ app.get('/inicio', (req, res) => {
 
 async function main() {
   // Conectar con la base de datos
-  await mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true, useUnifiedTopology: true });
+  await mongoose.connect('mongodb://localhost:27017/posiones_formulario_bd', { useNewUrlParser: true, useUnifiedTopology: true });
 
   // Crear una nueva encuesta
   const encuesta = new Encuesta({
@@ -56,3 +34,7 @@ async function main() {
 }
 
 main();
+
+app.listen(3000, () => {
+  console.log('Servidor iniciado en el puerto 3000');
+})
