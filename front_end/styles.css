@@ -31,15 +31,20 @@ header{
     margin-top: 0;
 }
 
+.subtitulo {
+    padding: 3rem 2rem;
+}
+
 /*Buscador de pociones*/
+
 .buscador{
-    color: #fff;
+    color: #000;
     transition-property: all;
     transition: ease-in-out;
     transition-duration: 800ms;
     background: #A179C3;
     max-width: 35%;
-    height: 2rem;
+    height: 1.5rem;
     display: flex;
     margin: auto;
     border-color: transparent;
@@ -50,7 +55,7 @@ header{
 .buscador:hover{
     transition: ease-in-out;
     transition-duration: 800ms;
-    background-color: #8a378f;
+    background-color: #fae6fa;
 }
 
 h2{
@@ -101,6 +106,7 @@ nav a:hover{
     grid-template-columns: 12% 20% 20% 12% 12% 12% 12%;
     border-radius: 2rem;
     margin: 0.3rem;
+    padding-top: .5em;
 
 }
 .producto p{
@@ -126,9 +132,8 @@ nav a:hover{
     left:8%;
     border-color: transparent;
     border-radius: 20px;
-    width: 80%; 
+    width: 80%;
     color: #3B0764;
-  
 }
 
 .modal h3{
@@ -137,40 +142,58 @@ nav a:hover{
     margin-left: 40%;
     display: flex;
     text-align: center;
-    
 }
 
 .modal::backdrop {
     background-color: #00000070;
 }
+
 .form{
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 40% 30% 30%;
     grid-template-rows: auto;
-
-    
+    box-sizing: content-box;
 }
+
+.campo1 input, .campo2 input, .campo3 input, .campo4 input, .campo5 input, .campo6 input {
+    transition-property: all;
+    transition: ease-in-out;
+    transition-duration: 800ms;
+    background-color: #ffffff;
+}
+
+.campo1 input:hover, .campo2 input:hover, .campo3 input:hover, .campo4 input:hover, .campo5 input:hover, .campo6 input:hover {
+    transition: ease-in-out;
+    transition-duration: 800ms;
+    background: #D8B4FE;
+}
+
 .campo1 {
     grid-column: 2;
     grid-row: 1;
 }
+
 .campo2{
     grid-column: 3;
     grid-row: 1;
 }
+
 .campo3{
     grid-column: 2;
     grid-row: 2;
 }
+
 .campo4{
     grid-row: 2;
     grid-column: 3;
 }
+
 .campo5{
     grid-column: 2/span 3;
     grid-row: 3;
 }
+
 .campo6{
     grid-row: 4;
     grid-column: 2 /span 3;
@@ -179,9 +202,11 @@ nav a:hover{
 input{
     padding: 1rem;
 }
+
 .form label{
     font-size: 1.5rem;
 }
+
 .form label input {
     margin-top: .5rem;
     margin-bottom: 1rem;
@@ -201,25 +226,38 @@ input{
     padding: 0.2rem;
     height: 3rem;
 }
+
 .boton1{
     grid-column: 1;
     width: 70%;
     margin: 1rem;
 }
+
 .boton2{
     grid-row: 5;
     width: 50%;
 }
+
 .boton3{
     grid-column: 3/3;
     grid-row: 5;
     width: 50%;
 }
 
+.btn-agregar {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    background: none;
+}
 
 .fotoPrev {
     width: 150px;
     height: 150px;
     margin: 1rem 4.5rem;
     grid-row: 1/span 2;
+    position: relative;
+    left: 50%;
 }
