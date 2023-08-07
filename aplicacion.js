@@ -14,26 +14,18 @@ app.get('/inicio', (req, res) => {
   res.send('Bienvenido a la página de inicio');
 });
 
-async function main() {
-  // Conectar con la base de datos
-  await mongoose.connect('mongodb://localhost:27017/posiones_formulario_bd', { useNewUrlParser: true, useUnifiedTopology: true });
+(async () => {
+  try {
+    await mongoose.connect('mongodb://127.0.0.1:27017/posiones_formulario_bd', {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log('Conexión exitosa a MongoDB');
+  } catch (error) {
+    console.error('Error de conexión a MongoDB:', error);
+  }
+})();
 
-  // Crear una nueva encuesta
-  const encuesta = new Encuesta({
-    titulo: 'Mi encuesta',
-    descripcion: 'Esta es una encuesta de prueba',
-    nombre: 'Juan'
-  });
-  await encuesta.save();
-  console.log('Encuesta creada:', encuesta);
-
-  // Buscar encuestas por título
-  const encuestas = await Encuesta.find({ titulo: 'Mi encuesta' });
-  console.log('Encuestas encontradas:', encuestas);
-
-}
-
-main();
 
 app.listen(3000, () => {
   console.log('Servidor iniciado en el puerto 3000');
