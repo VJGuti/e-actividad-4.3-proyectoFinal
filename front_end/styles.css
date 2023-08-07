@@ -81,6 +81,10 @@ nav a{
     color: rgb(244, 230, 253);
     display: block;
 }
+nav a:hover{
+    font-size: 1.2rem;
+    color: #8a378f;
+}
 
 
 /*producto*/
